@@ -12,6 +12,7 @@ public class ValidAnagram {
 
         // add char from string 1 and its occurrence , then for string 2 decrement the value of occurrence
         HashMap<Character, Integer> track = new HashMap<>();
+        // or u can use array of length 26 , track occurrence of each char in both string ( ++ then -- , if array has all value 0 then true else false
 
         for (char c : s.toCharArray()) {
             int count = track.getOrDefault(c, 0);
